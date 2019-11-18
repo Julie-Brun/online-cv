@@ -65,16 +65,17 @@ body {
 
 /* Menus */
 
-#menuFixe01, #menuFixe02 {
+#headerContainer #menuFixe01, #menuFixe02 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 400px;
+    min-height: 400px; 
+    position: relative;
 }
 
-#menuFixe01 #etoile {
+#headerContainer #menuFixe01 #etoile {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,25 +83,27 @@ body {
     width: 100%;
 }
 
-#menuFixe01 #etoile #button, #menuFixe02 #button02 {
+#headerContainer #menuFixe01 #etoile #button, #menuFixe02 #button02 {
     width: 50%;
+    box-shadow: none;
     animation: float 6s ease-in-out infinite;
 }
 
-#menuFixe01 #etoile #Titre00, #menuFixe02 #Titre05 {
+#headerContainer #menuFixe01 #etoile #Titre00, #menuFixe02 #Titre05 {
     font-size: 2.5rem;
     text-shadow: 0 0 5px rgba(250, 250, 250, 0.8);
     animation: float 6s ease-in-out infinite;
 }
 
-#menuFixe01 #menu, #menuFixe02 #menu02 {
+#headerContainer #menuFixe01 #menu, #menuFixe02 #menu02 {
     display: none;
-    background: rgba(203, 217, 217, 0.5);
+    position: absolute;
+    background: rgba(50, 72, 97, 0.8);
     border: 2px solid white;
     border-radius: 50px;
 }
 
-#menuFixe01 #menu #links, #menuFixe02 #menu02 #links02 {
+#headerContainer #menuFixe01 #menu #links, #menuFixe02 #menu02 #links02 {
     list-style: none;
     padding: 0;
     margin: 20px;
@@ -110,7 +113,7 @@ body {
     align-items: center;
 }
 
-#menuFixe01 #menu #links li a, #menuFixe02 #menu02 #links02 li a {
+#headerContainer #menuFixe01 #menu #links li a, #menuFixe02 #menu02 #links02 li a {
     color: white;
     font-size: 1.5rem;
     text-decoration: none;
@@ -236,7 +239,7 @@ body {
     
     /* Menus */
     
-    #menuFixe01 #etoile #button, #menuFixe02 #button02 {
+    #headerContainer #menuFixe01 #etoile #button, #menuFixe02 #button02 {
         width: 30%;
     }
     
@@ -269,8 +272,7 @@ body {
     
     #headerContainer {
         width: 25%;
-        height: 350px;
-        justify-content: flex-start;
+        min-height: 350px;
         margin: 0;
     }
 
@@ -279,7 +281,7 @@ body {
     }
     
     #headerContainer h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
     
     #headerContainer h2 {
@@ -288,29 +290,23 @@ body {
     
     /* Menus */
     
-    #menuFixe01 {
-        position: fixed;
-        z-index: 10;
-        bottom: -25px;
-        left: -480px;
-        flex-direction: column-reverse;
-        justify-content: flex-start;
-        align-items: center;
+    #headerContainer #menuFixe01 {
         width: 75%;
-        min-height: 450px;
+        min-height: auto;
+        flex-direction: column-reverse;
     }
 
     #menuFixe02 {
         display: none;
     }
 
-    #menuFixe01 #etoile {
-        width: 25%;
+    #headerContainer #menuFixe01 #etoile {
+        width: 100%;
         min-height: 100px;
         margin: 20px 0 0 0;
     }
     
-    #menuFixe01 #etoile #button {
+    #headerContainer #menuFixe01 #etoile #button {
         width: 40%;
     }
     

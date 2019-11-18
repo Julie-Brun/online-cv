@@ -43,11 +43,11 @@ $(document).ready(function(){
     // Menu Contact 
 
     $( "#button" ).click(function() {
-      $("#menu").toggle("slow");
+      $("#menu").fadeToggle("slow");
     });
 
     $( "#button02" ).click(function() {
-      $("#menu02").toggle("slow");
+      $("#menu02").fadeToggle("slow");
     });
 
     fadeToggle("#Astronaute", "#Présentation02");
@@ -139,11 +139,11 @@ $(document).ready(function(){
     // Menu Contact 
 
     $( "#button" ).click(function() {
-      $('#menu').toggle("slow");
+      $('#menu').fadeToggle("slow");
     });
 
     $( "#button02" ).click(function() {
-      $('#menu02').toggle("slow");
+      $('#menu02').fadeToggle("slow");
     });
 
     // Sections
